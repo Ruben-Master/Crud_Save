@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 
+Route::get('/', function () {
+    return view('index');
+});
 
 Route::get('/principal', function () {
     return view('index');
